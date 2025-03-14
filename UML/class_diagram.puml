@@ -1,0 +1,30 @@
+@startuml
+
+interface IEdgeOperator {
+    + Bitmap Apply(Bitmap image)
+}
+
+interface IEdgeDetectionService {
+    + Bitmap ApplyEdgeDetection(Bitmap image, String operatorType)
+}
+
+class SobelOperator {
+    + Bitmap Apply(Bitmap image)
+}
+
+class PrewittOperator {
+    + Bitmap Apply(Bitmap image)
+}
+
+class EdgeDetectionService {
+    - Dictionary<String, IEdgeOperator> _operators
+    + EdgeDetectionService(Dictionary<String, IEdgeOperator> operators)
+    + Bitmap ApplyEdgeDetection(Bitmap inputImage, String operatorType)
+    - Bitmap ConvertToGrayscale(Bitmap original)
+}
+
+IEdgeOperator <|.. SobelOperator
+IEdgeOperator <|.. PrewittOperator
+IEdgeDetectionService <|.. EdgeDetectionService
+
+@enduml
