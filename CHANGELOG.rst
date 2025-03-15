@@ -1,8 +1,17 @@
 Changelog
 =========
 
-All notable changes to this project will be documented in this file.
+[0.2.0] — 2025-03-15
+-----------------------
+Added
+.....
+- Set up the project structure.
+- Implemented Sobel and Prewitt filters.
+- Tested input and output images of the programs.
 
-## [0.1.0] - 2025-03-14
-### Added
+[0.1.0] — 2025-03-14
+-----------------------
+Added
+.....
+
 - Initial design of the UML class diagram.
