@@ -1,6 +1,6 @@
 # Edge Detection Backend in C#
 
-[![Version badge](https://img.shields.io/badge/Version-0.2.0-green.svg)](https://shields.io/)
+[![Version badge](https://img.shields.io/badge/Version-0.3.0-green.svg)](https://shields.io/)
 
 - [Project Overview](#project-overview)
 - [Project Structure](#project-structure)
@@ -10,6 +10,7 @@
   - [Running the Application](#running-the-application)
 - [Usage](#usage)
 - [Example](#example)
+- [Test Results](#test-results)
 - [References](#references)
 
 ## Project Overview
@@ -82,6 +83,14 @@ Here is an example of an input image and the resulting edge-detected output:
 #### Prewitt
 ![Prewitt Image](images/sample-prewitt.bmp)
 
+## Test Results
+The test results and code coverage reports are generated using xunit and cobertura. You can view the detailed test results and coverage analysis in the `test_results` directory.
+
+### View Result
+- [Test Result](test_results/test_results.trx)
+- [Code Coverage](test_results/index.html)
+
 ## References
-- Sobel Operator: [Wikipedia](https://en.wikipedia.org/wiki/Sobel_operator)
-- Prewitt Operator: [Wikipedia](https://en.wikipedia.org/wiki/Prewitt_operator)
+- [Sobel Operator](https://en.wikipedia.org/wiki/Sobel_operator)
+- [Prewitt Operator](https://en.wikipedia.org/wiki/Prewitt_operator)
+- [Act Arrange Assert](https://docs.telerik.com/devtools/justmock/basic-usage/arrange-act-assert)
