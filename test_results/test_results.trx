@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="aef91eda-2e01-430a-8e86-654cc42bd1f4" name="@c84ee5db78aa 2025-03-16 11:08:05" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2025-03-16T11:08:05.6708144+00:00" queuing="2025-03-16T11:08:05.6708147+00:00" start="2025-03-16T10:08:04.2954834+00:00" finish="2025-03-16T11:08:05.6785194+00:00" />
+  <TestSettings name="default" id="8cb6c53e-2ef0-42dd-8bba-236a5b96381d">
+    <Deployment runDeploymentRoot="_c84ee5db78aa_2025-03-16_18_08_05" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="037c7889-088c-47a3-868a-400f56cc5970" testId="67045dd5-751c-3193-e3b4-7eff9aa18099" testName="EdgeDetection.Tests.SobelOperatorTests.Apply_ShouldReturnEdgeDetectedImage" computerName="c84ee5db78aa" duration="00:00:00.0164752" startTime="2025-03-16T11:08:05.4994243+00:00" endTime="2025-03-16T11:08:05.4994244+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="037c7889-088c-47a3-868a-400f56cc5970" />
+    <UnitTestResult executionId="7c0cfcbd-b69c-4b6c-bc42-c48d2d1933f4" testId="2b39c372-efb1-7f0c-284a-8b0d6443f618" testName="EdgeDetection.Tests.EdgeDetectionServiceTests.ApplyEdgeDetection_WithInvalidOperator_ShouldThrowArgumentException" computerName="c84ee5db78aa" duration="00:00:00.0005827" startTime="2025-03-16T11:08:05.5008782+00:00" endTime="2025-03-16T11:08:05.5008783+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7c0cfcbd-b69c-4b6c-bc42-c48d2d1933f4" />
+    <UnitTestResult executionId="5b0e379d-1e78-434c-97dd-9f2973f8917d" testId="3b3768c1-b65b-86b3-c3b7-88f42fe7bcb1" testName="EdgeDetection.Tests.EdgeDetectionServiceTests.ApplyPrewittOperator_ShouldReturnEdgeDetectedImage" computerName="c84ee5db78aa" duration="00:00:00.0001543" startTime="2025-03-16T11:08:05.5010423+00:00" endTime="2025-03-16T11:08:05.5010423+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5b0e379d-1e78-434c-97dd-9f2973f8917d" />
+    <UnitTestResult executionId="dc6c8c44-4898-4f63-8b4b-7cc378903bf9" testId="fe1f2ff5-b6ab-98a5-4a1d-ccbcc878d0e2" testName="EdgeDetection.Tests.PrewittOperatorTests.Apply_ShouldReturnEdgeDetectedImage" computerName="c84ee5db78aa" duration="00:00:00.0164722" startTime="2025-03-16T11:08:05.4997411+00:00" endTime="2025-03-16T11:08:05.4997411+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dc6c8c44-4898-4f63-8b4b-7cc378903bf9" />
+    <UnitTestResult executionId="9c1d05bd-dad9-40ae-aa3a-cf5809a332c6" testId="71a5f3f0-b6ff-13ae-70ce-8921e9cd72ee" testName="EdgeDetection.Tests.EdgeDetectionServiceTests.ApplyEdgeDetection_WithNullImage_ShouldThrowArgumentNullException" computerName="c84ee5db78aa" duration="00:00:00.0001176" startTime="2025-03-16T11:08:05.5011803+00:00" endTime="2025-03-16T11:08:05.5011803+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9c1d05bd-dad9-40ae-aa3a-cf5809a332c6" />
+    <UnitTestResult executionId="c035eb51-019c-4766-8dcd-d4687645995d" testId="05acd47a-8c9c-6b69-e1af-0de908119f7d" testName="EdgeDetection.Tests.EdgeDetectionServiceTests.ApplySobelOperator_ShouldReturnEdgeDetectedImage" computerName="c84ee5db78aa" duration="00:00:00.0168489" startTime="2025-03-16T11:08:05.4870082+00:00" endTime="2025-03-16T11:08:05.4870377+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c035eb51-019c-4766-8dcd-d4687645995d" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="EdgeDetection.Tests.EdgeDetectionServiceTests.ApplyEdgeDetection_WithInvalidOperator_ShouldThrowArgumentException" storage="/app/tests/edgedetection.tests/bin/debug/net6.0/edgedetection.tests.dll" id="2b39c372-efb1-7f0c-284a-8b0d6443f618">
+      <Execution id="7c0cfcbd-b69c-4b6c-bc42-c48d2d1933f4" />
+      <TestMethod codeBase="/app/tests/EdgeDetection.Tests/bin/Debug/net6.0/EdgeDetection.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="EdgeDetection.Tests.EdgeDetectionServiceTests" name="ApplyEdgeDetection_WithInvalidOperator_ShouldThrowArgumentException" />
+    </UnitTest>
+    <UnitTest name="EdgeDetection.Tests.EdgeDetectionServiceTests.ApplySobelOperator_ShouldReturnEdgeDetectedImage" storage="/app/tests/edgedetection.tests/bin/debug/net6.0/edgedetection.tests.dll" id="05acd47a-8c9c-6b69-e1af-0de908119f7d">
+      <Execution id="c035eb51-019c-4766-8dcd-d4687645995d" />
+      <TestMethod codeBase="/app/tests/EdgeDetection.Tests/bin/Debug/net6.0/EdgeDetection.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="EdgeDetection.Tests.EdgeDetectionServiceTests" name="ApplySobelOperator_ShouldReturnEdgeDetectedImage" />
+    </UnitTest>
+    <UnitTest name="EdgeDetection.Tests.EdgeDetectionServiceTests.ApplyEdgeDetection_WithNullImage_ShouldThrowArgumentNullException" storage="/app/tests/edgedetection.tests/bin/debug/net6.0/edgedetection.tests.dll" id="71a5f3f0-b6ff-13ae-70ce-8921e9cd72ee">
+      <Execution id="9c1d05bd-dad9-40ae-aa3a-cf5809a332c6" />
+      <TestMethod codeBase="/app/tests/EdgeDetection.Tests/bin/Debug/net6.0/EdgeDetection.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="EdgeDetection.Tests.EdgeDetectionServiceTests" name="ApplyEdgeDetection_WithNullImage_ShouldThrowArgumentNullException" />
+    </UnitTest>
+    <UnitTest name="EdgeDetection.Tests.PrewittOperatorTests.Apply_ShouldReturnEdgeDetectedImage" storage="/app/tests/edgedetection.tests/bin/debug/net6.0/edgedetection.tests.dll" id="fe1f2ff5-b6ab-98a5-4a1d-ccbcc878d0e2">
+      <Execution id="dc6c8c44-4898-4f63-8b4b-7cc378903bf9" />
+      <TestMethod codeBase="/app/tests/EdgeDetection.Tests/bin/Debug/net6.0/EdgeDetection.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="EdgeDetection.Tests.PrewittOperatorTests" name="Apply_ShouldReturnEdgeDetectedImage" />
+    </UnitTest>
+    <UnitTest name="EdgeDetection.Tests.EdgeDetectionServiceTests.ApplyPrewittOperator_ShouldReturnEdgeDetectedImage" storage="/app/tests/edgedetection.tests/bin/debug/net6.0/edgedetection.tests.dll" id="3b3768c1-b65b-86b3-c3b7-88f42fe7bcb1">
+      <Execution id="5b0e379d-1e78-434c-97dd-9f2973f8917d" />
+      <TestMethod codeBase="/app/tests/EdgeDetection.Tests/bin/Debug/net6.0/EdgeDetection.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="EdgeDetection.Tests.EdgeDetectionServiceTests" name="ApplyPrewittOperator_ShouldReturnEdgeDetectedImage" />
+    </UnitTest>
+    <UnitTest name="EdgeDetection.Tests.SobelOperatorTests.Apply_ShouldReturnEdgeDetectedImage" storage="/app/tests/edgedetection.tests/bin/debug/net6.0/edgedetection.tests.dll" id="67045dd5-751c-3193-e3b4-7eff9aa18099">
+      <Execution id="037c7889-088c-47a3-868a-400f56cc5970" />
+      <TestMethod codeBase="/app/tests/EdgeDetection.Tests/bin/Debug/net6.0/EdgeDetection.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="EdgeDetection.Tests.SobelOperatorTests" name="Apply_ShouldReturnEdgeDetectedImage" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="67045dd5-751c-3193-e3b4-7eff9aa18099" executionId="037c7889-088c-47a3-868a-400f56cc5970" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2b39c372-efb1-7f0c-284a-8b0d6443f618" executionId="7c0cfcbd-b69c-4b6c-bc42-c48d2d1933f4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3b3768c1-b65b-86b3-c3b7-88f42fe7bcb1" executionId="5b0e379d-1e78-434c-97dd-9f2973f8917d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fe1f2ff5-b6ab-98a5-4a1d-ccbcc878d0e2" executionId="dc6c8c44-4898-4f63-8b4b-7cc378903bf9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="71a5f3f0-b6ff-13ae-70ce-8921e9cd72ee" executionId="9c1d05bd-dad9-40ae-aa3a-cf5809a332c6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="05acd47a-8c9c-6b69-e1af-0de908119f7d" executionId="c035eb51-019c-4766-8dcd-d4687645995d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="6" executed="6" passed="6" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.3+1b45f5407b (64-bit .NET 6.0.36)
+[xUnit.net 00:00:00.37]   Discovering: EdgeDetection.Tests
+[xUnit.net 00:00:00.40]   Discovered:  EdgeDetection.Tests
+[xUnit.net 00:00:00.40]   Starting:    EdgeDetection.Tests
+[xUnit.net 00:00:00.52]   Finished:    EdgeDetection.Tests
+</StdOut>
+    </Output>
+    <CollectorDataEntries>
+      <Collector agentName="c84ee5db78aa" uri="datacollector://microsoft/CoverletCodeCoverage/1.0" collectorDisplayName="XPlat code coverage">
+        <UriAttachments>
+          <UriAttachment>
+            <A href="c84ee5db78aa/coverage.cobertura.xml"></A>
+          </UriAttachment>
+        </UriAttachments>
+      </Collector>
+    </CollectorDataEntries>
+  </ResultSummary>
+</TestRun>
