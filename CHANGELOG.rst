@@ -1,6 +1,12 @@
 Changelog
 =========
 
+[0.4.0] — 2025-03-17
+-----------------------
+Added
+.....
+- Add Dockerfile for containerization.
+
 [0.3.0] — 2025-03-16
 -----------------------
 Added

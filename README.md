@@ -1,13 +1,15 @@
 # Edge Detection Backend in C#
 
-[![Version badge](https://img.shields.io/badge/Version-0.3.0-green.svg)](https://shields.io/)
+[![Version badge](https://img.shields.io/badge/Version-0.4.0-green.svg)](https://shields.io/)
 
 - [Project Overview](#project-overview)
 - [Project Structure](#project-structure)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
+  - [Installation (with Docker) - Recommended](#installation-with-docker---recommended)
+  - [Installation (without Docker)](#installation-without-docker)
   - [Running the Application](#running-the-application)
+  - [Testing and Generating Code Coverage](#testing-and-generating-code-coverage)
 - [Usage](#usage)
 - [Example](#example)
 - [Test Results](#test-results)
@@ -46,8 +48,31 @@ EdgeDetection
 
 ### Prerequisites
 - .NET SDK (version 6.0 or later)
+- Docker (for containerization)
 
-### Installation
+### Installation (with Docker) - Recommended
+1. Clone the repository:
+   ```
+   git clone https://github.com/NelsenEW/EdgeDetection.git
+   ```
+2. Navigate to the project directory:
+   ```
+   cd EdgeDetection
+   ```
+3. Build the Docker image:
+   ```
+   docker build -t edgedetection .
+   ```
+4. Run the Docker container:
+   ```
+   docker run -it --rm -v $(pwd)/images:/app/images edgedetection <imagePath> [operator] [outputPath]
+   ```
+Replace `<imagePath>` with the path to the input image inside the `images` directory. Optionally, specify `[operator]` (either `Sobel` or `Prewitt`) and `[outputPath]` for the output image. If `[operator]` is not specified, `Sobel` will be used by default. If `[outputPath]` is not specified, the output will be saved with a suffix `-operator_name` in the same directory as the input image.
+
+Example:
+`docker run -it --rm --privileged -v $(pwd)/images:/app/images edgedetection /app/images/sample-input.png Prewitt`
+
+### Installation (without Docker)
 1. Clone the repository:
    ```
    git clone https://github.com/NelsenEW/EdgeDetection.git
@@ -68,6 +93,23 @@ dotnet run --project src/EdgeDetection/EdgeDetection.csproj <operator> <imagePat
 ```
 Replace `<operator>` with either `Sobel` or `Prewitt` and `<imagePath>` with the path to the input image.
 
+### Testing and Generating Code Coverage
+To run the unit tests and generate code coverage reports, use the following command:
+```
+dotnet test tests/EdgeDetection.Tests/EdgeDetection.Tests.csproj 
+/p:CoverletOutputFormat=cobertura --results-directory /app/test_results --logger "trx;LogFileName=test_results.trx" --collect "XPlat Code Coverage" && reportgenerator -reports:/app/test_results/**/coverage.cobertura.xml -targetdir:/app/test_results/coverage_report -reporttypes:Html
+```
+
+#### With Docker
+1. Build the Docker image with the test stage:
+   ```
+   docker build -t edgedetection-test --target test .
+   ```
+2. Run the Docker container and mount volumes to access the test results and code coverage reports:
+   ```
+   docker run --rm -v $(pwd)/test_results:/app/test_results -v $(pwd)/coverage:/app/coverage edgedetection-test
+   ```
+3. The test results and code coverage reports will be available in the `test_results` and `coverage` directories on your host machine.
 
 ## Example
 Here is an example of an input image and the resulting edge-detected output:
